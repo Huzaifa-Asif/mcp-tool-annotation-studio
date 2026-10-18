@@ -23,7 +23,7 @@ Run all checks:
 npm run check
 ```
 
-Accepted shapes are an array of tools, `{ "tools": [...] }`, or an MCP-style `{ "result": { "tools": [...] } }` document. The browser imports at most 1 MB and 100 tools. It performs no network requests and stores no imported content.
+Accepted shapes are an array of tools, `{ "tools": [...] }`, or an MCP-style `{ "result": { "tools": [...] } }` document. The browser imports at most 1 MB and 100 tools. It performs no network requests and does not persist or transmit imported content; Clear keeps one disclosed in-memory undo snapshot for 10 seconds.
 
 ## Scope
 
