@@ -1,0 +1,14 @@
+{
+  "name": "mcp-tool-annotation-studio",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first MCP tool annotation evidence editor and deterministic checker.",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "check": "node --check src/core.mjs && node --check src/app.mjs && node --check src/cli.mjs && node --check src/server.mjs && node --test",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
